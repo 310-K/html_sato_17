@@ -1,0 +1,332 @@
+/* ここから下に記載していく */
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+/* リンクの下線消し・文字色戻し */
+header a {
+    text-decoration:none;
+    color: black;
+}
+
+#logo{
+    margin-left: 25px;
+}
+
+
+#menu-list{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    font-size: 21px;
+}
+
+.menu{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#top-view {
+    background-image: url(../img/mainbg.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* containは画像の全体を必ず表示 */
+    background-position: top center;
+    /* background-position: top center で縦横の位置指定*/
+    height: 500px;
+    color: white;
+    text-align: center;
+    position:relative;
+}
+
+#top-msg {
+    /* 親要素にrelative,子要素にabsoluteで配置動かせる */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* divの右上が中央に来る状態を解消 */
+    width: 100%;
+}
+
+#top-msg h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#top-msg h2{
+    font-size: 40px;
+    font-weight:light;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+
+#about h3, 
+#news h3 {
+    color: #ffd61a;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 60px;
+    /* text-align: center; */
+}
+
+#about{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#about p{
+    font-size: 16px;
+}
+
+.p40 {
+    margin-bottom: 40px;
+}
+
+.p60 {
+    margin-bottom: 60px;
+}
+
+#photos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#course {
+    text-align: center;
+}
+
+.honbun h3 {
+    margin-top: 0;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.lesson{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.lesson img{
+    width: 50%;
+}
+
+.lesson h3 {
+    margin-bottom: 40px;
+}
+
+.ltext {
+    padding-left: 50px;
+    background-color: #fafafa;
+    width: 50%;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    text-align: left;
+    display: flex;
+}
+
+
+.honbun {
+    /* align-items: center; */
+    /* display: inline; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.margin_left {
+    margin-left: auto;
+}
+
+.ltext_left {
+    /* paddigにはautoが効かない！ */
+    padding-right: 50px;
+    background-color: #fafafa;
+    width: 50%;
+    text-align: left;
+}
+
+#news{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.news-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.news_content {
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.news_content:hover {
+    opacity: 0.6;
+}
+
+.date {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.news-text p {
+    font-size: 14px;
+}
+
+#news a {
+    text-decoration:none;
+    color: black;
+}
+
+
+
+#access {
+    justify-content: center;
+    background-color: #fafafa;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#access h3 {
+    /* padding-top: 60px; */
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#access h4 {
+    text-align: center;
+}
+
+table {
+    /* margin-right: 30%; */
+    margin-top: 60px;
+    margin-left: 25%;
+    /* border: 1p x; */
+    /* border-color: #bfbfbf; */
+
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-table {
+    border-top: solid #bfbfbf 1px;
+}
+
+.p30 {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    text-align: left;
+    width: 100%;
+}
+
+.text {
+    width: 328px;
+    height: 36px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.contact-form th {
+    vertical-align: middle;
+    padding: 8px 10px;
+    height: 40px;
+    width: 35%;
+    border-bottom: solid #bfbfbf 1px;
+}
+
+.contact-form td {
+    vertical-align: middle;
+    padding: 8px 10px;
+    border-bottom: solid #bfbfbf 1px;
+    border-left: solid #bfbfbf 1px;
+
+}
+
+
+.contact-form th td {
+    border: solid #bfbfbf 1px;
+
+    /* height: 40px; */
+    /* padding: 10px; */
+}
+
+.contact-form textarea {
+    width: 328px;
+    height: 100px;
+}
+
+.contact-form table {
+    /* border:solid #bfbfbf 1px; */
+    border-collapse: collapse;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    /* margin-top: 60px; */
+    /* margin-bottom: 60px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    text-align: center;
+    background-color: #ffd61a;
+    color: white;
+    border-width: 0px;
+}
+
+/* hover アクション */
+/* https://coosy.co.jp/blog/css-hovereffect/ */
+.button:hover {
+    opacity: 0.6;
+}
+
+#news button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#submit-btn input {
+    /* display:flex; */
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+#footer {
+    background-color: #707070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color:#ffffff;
+}
